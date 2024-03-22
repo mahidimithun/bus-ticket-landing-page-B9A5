@@ -2,14 +2,19 @@
 function setBackgroundColorById(elementId) {
 
     const element = document.getElementById(elementId);
-    // element.style.backgroundColor = "rgb(29, 209, 0)";
-    element.classList.add('bg-orange-400');
+    element.style.backgroundColor = "rgb(29, 209, 0)";
+    // element.classList.add('bg-green-400');
+    element.style.color = "white"; 
+    element.style.fontSize = "20px";
    
 }
 
 function removeBackgroundColorById(elementId) {
     const element = document.getElementById(elementId);
-    element.classList.remove('bg-orange-400');
+    // element.classList.remove('bg-green-400');
+    element.style.backgroundColor = "";
+    element.style.color = "#03071280";
+    element.style.fontSize = ""; 
 
 }
 
@@ -141,7 +146,7 @@ function selectSeatB4() {
 
 }
 function selectSeatC1() {
-    clickCountC1 = clickCountC2 + 1;
+    clickCountC1 = clickCountC1 + 1;
     if (clickCountC1 % 2 !== 0) {
         setBackgroundColorById('C1');
     }
@@ -171,7 +176,7 @@ function selectSeatC3() {
 
 }
 function selectSeatC4() {
-    clickCountC2 = clickCountC4 + 1;
+    clickCountC4 = clickCountC4 + 1;
     if (clickCountC4 % 2 !== 0) {
         setBackgroundColorById('C4');
     }
