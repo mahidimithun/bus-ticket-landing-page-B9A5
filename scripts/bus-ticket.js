@@ -4,9 +4,9 @@ function setBackgroundColorById(elementId) {
     const element = document.getElementById(elementId);
     element.style.backgroundColor = "rgb(29, 209, 0)";
     // element.classList.add('bg-green-400');
-    element.style.color = "white"; 
+    element.style.color = "white";
     element.style.fontSize = "20px";
-   
+
 }
 
 function removeBackgroundColorById(elementId) {
@@ -14,7 +14,7 @@ function removeBackgroundColorById(elementId) {
     // element.classList.remove('bg-green-400');
     element.style.backgroundColor = "";
     element.style.color = "#03071280";
-    element.style.fontSize = ""; 
+    element.style.fontSize = "";
 
 }
 
@@ -62,56 +62,62 @@ let clickCountJ3 = 0;
 let clickCountJ4 = 0;
 
 function selectSeatA1() {
-    console.log('A1 is clicked',clickCountA1);
     clickCountA1 = clickCountA1 + 1;
     if (clickCountA1 % 2 !== 0) {
         setBackgroundColorById('A1');
+        addSeat('A1');
+
     }
     else {
         removeBackgroundColorById('A1')
+        removeSeat('A1');
+     
     }
 }
 
 
 function selectSeatA2() {
-    console.log('A2 is clicked', clickCountA2);
+
     clickCountA2 = clickCountA2 + 1;
     if (clickCountA2 % 2 !== 0) {
         setBackgroundColorById('A2');
+        addSeat('A2');
     }
     else {
-       removeBackgroundColorById('A2')  
+        removeBackgroundColorById('A2')
+        removeSeat('A2');
     }
 }
 function selectSeatA3() {
-    console.log('A2 is clicked', clickCountA3);
     clickCountA3 = clickCountA3 + 1;
     if (clickCountA3 % 2 !== 0) {
         setBackgroundColorById('A3');
+        addSeat('A3');
     }
     else {
-       removeBackgroundColorById('A3')  
+        removeBackgroundColorById('A3')
+        removeSeat('A3');
     }
 }
 
 function selectSeatA4() {
-   
+
     clickCountA4 = clickCountA4 + 1;
     if (clickCountA4 % 2 !== 0) {
         setBackgroundColorById('A4');
     }
     else {
-       removeBackgroundColorById('A4')  
+        removeBackgroundColorById('A4')
     }
 
 }
 function selectSeatB1() {
-    clickCountB1= clickCountB1 + 1;
+    clickCountB1 = clickCountB1 + 1;
     if (clickCountB1 % 2 !== 0) {
         setBackgroundColorById('B1');
     }
     else {
-       removeBackgroundColorById('B1')  
+        removeBackgroundColorById('B1')
     }
 
 }
@@ -121,7 +127,7 @@ function selectSeatB2() {
         setBackgroundColorById('B2');
     }
     else {
-       removeBackgroundColorById('B2')  
+        removeBackgroundColorById('B2')
     }
 
 }
@@ -131,7 +137,7 @@ function selectSeatB3() {
         setBackgroundColorById('B3');
     }
     else {
-       removeBackgroundColorById('B3')  
+        removeBackgroundColorById('B3')
     }
 
 }
@@ -141,7 +147,7 @@ function selectSeatB4() {
         setBackgroundColorById('B4');
     }
     else {
-       removeBackgroundColorById('A2')  
+        removeBackgroundColorById('B4')
     }
 
 }
@@ -151,7 +157,7 @@ function selectSeatC1() {
         setBackgroundColorById('C1');
     }
     else {
-       removeBackgroundColorById('C1')  
+        removeBackgroundColorById('C1')
     }
 
 }
@@ -161,7 +167,7 @@ function selectSeatC2() {
         setBackgroundColorById('C2');
     }
     else {
-       removeBackgroundColorById('C2')  
+        removeBackgroundColorById('C2')
     }
 
 }
@@ -171,7 +177,7 @@ function selectSeatC3() {
         setBackgroundColorById('C3');
     }
     else {
-       removeBackgroundColorById('C3')  
+        removeBackgroundColorById('C3')
     }
 
 }
@@ -181,7 +187,7 @@ function selectSeatC4() {
         setBackgroundColorById('C4');
     }
     else {
-       removeBackgroundColorById('C4')  
+        removeBackgroundColorById('C4')
     }
 
 }
@@ -191,7 +197,7 @@ function selectSeatD1() {
         setBackgroundColorById('D1');
     }
     else {
-       removeBackgroundColorById('D1')  
+        removeBackgroundColorById('D1')
     }
 
 }
@@ -201,7 +207,7 @@ function selectSeatD2() {
         setBackgroundColorById('D2');
     }
     else {
-       removeBackgroundColorById('D2')  
+        removeBackgroundColorById('D2')
     }
 
 }
@@ -211,7 +217,7 @@ function selectSeatD3() {
         setBackgroundColorById('D3');
     }
     else {
-       removeBackgroundColorById('D3')  
+        removeBackgroundColorById('D3')
     }
 
 }
@@ -221,7 +227,7 @@ function selectSeatD4() {
         setBackgroundColorById('D4');
     }
     else {
-       removeBackgroundColorById('D4')  
+        removeBackgroundColorById('D4')
     }
 
 }
@@ -231,7 +237,7 @@ function selectSeatE1() {
         setBackgroundColorById('E1');
     }
     else {
-       removeBackgroundColorById('E1')  
+        removeBackgroundColorById('E1')
     }
 
 }
@@ -241,7 +247,7 @@ function selectSeatE2() {
         setBackgroundColorById('E2');
     }
     else {
-       removeBackgroundColorById('E2')  
+        removeBackgroundColorById('E2')
     }
 
 }
@@ -251,7 +257,7 @@ function selectSeatE3() {
         setBackgroundColorById('E3');
     }
     else {
-       removeBackgroundColorById('E3')  
+        removeBackgroundColorById('E3')
     }
 
 }
@@ -261,7 +267,7 @@ function selectSeatE4() {
         setBackgroundColorById('E4');
     }
     else {
-       removeBackgroundColorById('E4')  
+        removeBackgroundColorById('E4')
     }
 
 }
@@ -271,7 +277,7 @@ function selectSeatF1() {
         setBackgroundColorById('F1');
     }
     else {
-       removeBackgroundColorById('F1')  
+        removeBackgroundColorById('F1')
     }
 
 }
@@ -281,7 +287,7 @@ function selectSeatF2() {
         setBackgroundColorById('F2');
     }
     else {
-       removeBackgroundColorById('F2')  
+        removeBackgroundColorById('F2')
     }
 
 }
@@ -291,7 +297,7 @@ function selectSeatF3() {
         setBackgroundColorById('F3');
     }
     else {
-       removeBackgroundColorById('F3')  
+        removeBackgroundColorById('F3')
     }
 
 }
@@ -301,7 +307,7 @@ function selectSeatF4() {
         setBackgroundColorById('F4');
     }
     else {
-       removeBackgroundColorById('F4')  
+        removeBackgroundColorById('F4')
     }
 
 }
@@ -311,7 +317,7 @@ function selectSeatG1() {
         setBackgroundColorById('G1');
     }
     else {
-       removeBackgroundColorById('G1')  
+        removeBackgroundColorById('G1')
     }
 
 }
@@ -321,7 +327,7 @@ function selectSeatG2() {
         setBackgroundColorById('G2');
     }
     else {
-       removeBackgroundColorById('G2')  
+        removeBackgroundColorById('G2')
     }
 
 }
@@ -331,7 +337,7 @@ function selectSeatG3() {
         setBackgroundColorById('G3');
     }
     else {
-       removeBackgroundColorById('G3')  
+        removeBackgroundColorById('G3')
     }
 
 }
@@ -341,7 +347,7 @@ function selectSeatG4() {
         setBackgroundColorById('G4');
     }
     else {
-       removeBackgroundColorById('G4')  
+        removeBackgroundColorById('G4')
     }
 
 }
@@ -351,7 +357,7 @@ function selectSeatH1() {
         setBackgroundColorById('H1');
     }
     else {
-       removeBackgroundColorById('H1')  
+        removeBackgroundColorById('H1')
     }
 
 }
@@ -361,7 +367,7 @@ function selectSeatH2() {
         setBackgroundColorById('H2');
     }
     else {
-       removeBackgroundColorById('H2')  
+        removeBackgroundColorById('H2')
     }
 
 }
@@ -371,7 +377,7 @@ function selectSeatH3() {
         setBackgroundColorById('H3');
     }
     else {
-       removeBackgroundColorById('H3')  
+        removeBackgroundColorById('H3')
     }
 
 }
@@ -381,7 +387,7 @@ function selectSeatH4() {
         setBackgroundColorById('H4');
     }
     else {
-       removeBackgroundColorById('H4')  
+        removeBackgroundColorById('H4')
     }
 
 }
@@ -391,7 +397,7 @@ function selectSeatI1() {
         setBackgroundColorById('I1');
     }
     else {
-       removeBackgroundColorById('I1')  
+        removeBackgroundColorById('I1')
     }
 
 }
@@ -401,7 +407,7 @@ function selectSeatI2() {
         setBackgroundColorById('I2');
     }
     else {
-       removeBackgroundColorById('I2')  
+        removeBackgroundColorById('I2')
     }
 
 }
@@ -411,7 +417,7 @@ function selectSeatI3() {
         setBackgroundColorById('I3');
     }
     else {
-       removeBackgroundColorById('I3')  
+        removeBackgroundColorById('I3')
     }
 
 }
@@ -421,7 +427,7 @@ function selectSeatI4() {
         setBackgroundColorById('I4');
     }
     else {
-       removeBackgroundColorById('I4')  
+        removeBackgroundColorById('I4')
     }
 
 }
@@ -431,7 +437,7 @@ function selectSeatJ1() {
         setBackgroundColorById('J1');
     }
     else {
-       removeBackgroundColorById('J1')  
+        removeBackgroundColorById('J1')
     }
 
 }
@@ -441,7 +447,7 @@ function selectSeatJ2() {
         setBackgroundColorById('J2');
     }
     else {
-       removeBackgroundColorById('J2')  
+        removeBackgroundColorById('J2')
     }
 
 }
@@ -451,7 +457,7 @@ function selectSeatJ3() {
         setBackgroundColorById('J3');
     }
     else {
-       removeBackgroundColorById('J3')  
+        removeBackgroundColorById('J3')
     }
 
 }
@@ -461,7 +467,7 @@ function selectSeatJ4() {
         setBackgroundColorById('J4');
     }
     else {
-       removeBackgroundColorById('J4')  
+        removeBackgroundColorById('J4')
     }
 
 }
