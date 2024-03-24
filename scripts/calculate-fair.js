@@ -11,7 +11,7 @@ function addSeat(elementId) {
 
     ct(countAfterAdd);
     
-    
+    seatInfo(uniqueArray);
 
 
 
@@ -30,7 +30,7 @@ function removeSeat(elementId) {
     let countAfterRemove = removeUniqueArray.length;
     ct(countAfterRemove); 
     
-    
+    seatInfo(removeUniqueArray);
     
     
 
@@ -50,9 +50,16 @@ function ct(countAfterAdd,countAfterRemove){
     const displayTotalFair = document.getElementById('total-fair');
     displayTotalFair.innerText = totalFairInt;
     // console.log('Dis', displayTotalFair.innerText = totalFairInt);
+    //After git hub downlaod
+    const numberOfSeat = document.getElementById('number-of-seat');
+    const innerTextNumberOfSeat = numberOfSeat.innerText;
+    console.log('Seat number',innerTextNumberOfSeat);
 
-    
-
+    let totalNumberOfSeat = parseFloat(innerTextNumberOfSeat);
+    totalNumberOfSeat = countAfterAdd;
+    // console.log('Count',totalNumberOfSeat);
+    const totalSeatCount = document.getElementById('number-of-seat');
+    totalSeatCount.innerText = totalNumberOfSeat;
 
 }
 

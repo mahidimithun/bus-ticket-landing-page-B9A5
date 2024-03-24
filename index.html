@@ -381,7 +381,7 @@
               <!-- Seat    class    price -->
               <div class="flex flex-row justify-between  font-medium py-3 lg:text-lg">
                 <div>
-                  <h1>Seat <span class="bg-[#1DD100] px-2 py-0 text-white rounded">2</span></h1>
+                  <h1>Seat <span id="number-of-seat" class="bg-[#1DD100] px-2 py-0 text-white rounded">0</span></h1>
                 </div>
                 <div>
                   <h1>Class</h1>
@@ -395,17 +395,24 @@
               <!-- c2    economy   550 -->
 
               <div class="text-[#03071299]">
-                <div class="flex flex-row justify-between py-3">
-                  <h1>C2</h1>
+                <div id="seat-first-row" class="flex flex-row justify-between py-3 hidden">
+                  <h1 id="first-seat">C2</h1>
                   <h1>Economy</h1>
                   <h1>550 </h1>
                 </div>
 
-                <div class="flex flex-row justify-between py-3">
-                  <h1>C2</h1>
+                <div id="seat-second-row" class="flex flex-row justify-between py-3 hidden">
+                  <h1 id="second-seat">C2</h1>
                   <h1>Economy</h1>
                   <h1>550 </h1>
                 </div>
+
+                <div id="seat-third-row" class="flex flex-row justify-between py-3 hidden">
+                  <h1 id="third-seat">C2</h1>
+                  <h1>Economy</h1>
+                  <h1>550 </h1>
+                </div>
+
               </div>
               <hr>
 
