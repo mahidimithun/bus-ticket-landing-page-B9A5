@@ -31,6 +31,13 @@ function seatInfo(uniqueArray, removeUniqueArray) {
             showElementById('seat-third-row');
         }
 
+        else if (i === 3) {
+            // console.log('u ar 2', uniqueArray[i]);
+            const seatAlphabet = document.getElementById('forth-seat');
+            seatAlphabet.innerText = uniqueArray[i];
+            showElementById('seat-forth-row');
+        }
+
 
     }
 

@@ -105,9 +105,11 @@ function selectSeatA4() {
     clickCountA4 = clickCountA4 + 1;
     if (clickCountA4 % 2 !== 0) {
         setBackgroundColorById('A4');
+        addSeat('A4');
     }
     else {
         removeBackgroundColorById('A4')
+        removeSeat('A4');
     }
 
 }
@@ -115,9 +117,11 @@ function selectSeatB1() {
     clickCountB1 = clickCountB1 + 1;
     if (clickCountB1 % 2 !== 0) {
         setBackgroundColorById('B1');
+        addSeat('B1');
     }
     else {
-        removeBackgroundColorById('B1')
+        removeBackgroundColorById('B1');
+        removeSeat('B1');
     }
 
 }
@@ -125,9 +129,11 @@ function selectSeatB2() {
     clickCountB2 = clickCountB2 + 1;
     if (clickCountB2 % 2 !== 0) {
         setBackgroundColorById('B2');
+        addSeat('B2');
     }
     else {
-        removeBackgroundColorById('B2')
+        removeBackgroundColorById('B2');
+        removeSeat('B2');
     }
 
 }
@@ -135,9 +141,11 @@ function selectSeatB3() {
     clickCountB3 = clickCountB3 + 1;
     if (clickCountB3 % 2 !== 0) {
         setBackgroundColorById('B3');
+        addSeat('B3');
     }
     else {
-        removeBackgroundColorById('B3')
+        removeBackgroundColorById('B3');
+        removeSeat('B3');
     }
 
 }
@@ -145,9 +153,11 @@ function selectSeatB4() {
     clickCountB4 = clickCountB4 + 1;
     if (clickCountB4 % 2 !== 0) {
         setBackgroundColorById('B4');
+        addSeat('B4');
     }
     else {
-        removeBackgroundColorById('B4')
+        removeBackgroundColorById('B4');
+        removeSeat('B4');
     }
 
 }
