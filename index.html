@@ -17,6 +17,42 @@
 
   <header>
 
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute z-30 font-semibold">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-semibold">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="bg-[#1DD1001A] grid grid-cols-2 gap-x-1 lg:gap-2 p-2 lg:p-3 rounded-lg">
+          <h1 class="text-[#1DD100] font-bold text-sm lg:text-base">BUS</h1>
+          <img src="images/bus-icon.png" alt="">
+        </div>
+       
+      </div>
+    </div>
+
   </header>
 
   <main>
@@ -38,7 +74,8 @@
           </div>
 
           <div class="card-actions justify-center pt-10">
-            <button onclick="scrollToSection('ticket-section-div')" class="btn border-none bg-[#1DD100]">Buy Tickets</button>
+            <button onclick="scrollToSection('ticket-section-div')" class="btn border-none bg-[#1DD100]">Buy
+              Tickets</button>
           </div>
         </div>
       </div>
@@ -326,47 +363,127 @@
               </div>
 
 
-              <div id="A1" onclick="selectSeatA1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">A1</div>
-              <div id="A2" onclick="selectSeatA2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">A2</div>
-              <div id="A3" onclick="selectSeatA3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">A3</div>
-              <div id="A4" onclick="selectSeatA4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">A4</div>
-              <div id="B1" onclick="selectSeatB1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">B1</div>
-              <div id="B2" onclick="selectSeatB2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">B2</div>
-              <div id="B3" onclick="selectSeatB3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">B3</div>
-              <div id="B4" onclick="selectSeatB4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">B4</div>
-              <div id="C1" onclick="selectSeatC1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">C1</div>
-              <div id="C2" onclick="selectSeatC2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">C2</div>
-              <div id="C3" onclick="selectSeatC3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">C3</div>
-              <div id="C4" onclick="selectSeatC4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">C4</div>
-              <div id="D1" onclick="selectSeatD1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">D1</div>
-              <div id="D2" onclick="selectSeatD2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">D2</div>
-              <div id="D3" onclick="selectSeatD3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">D3</div>
-              <div id="D4" onclick="selectSeatD4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">D4</div>
-              <div id="E1" onclick="selectSeatE1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">E1</div>
-              <div id="E2" onclick="selectSeatE2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">E2</div>
-              <div id="E3" onclick="selectSeatE3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">E3</div>
-              <div id="E4" onclick="selectSeatE4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">E4</div>
-              <div id="F1" onclick="selectSeatF1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">F1</div>
-              <div id="F2" onclick="selectSeatF2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">F2</div>
-              <div id="F3" onclick="selectSeatF3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">F3</div>
-              <div id="F4" onclick="selectSeatF4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">F4</div>
-              <div id="G1" onclick="selectSeatG1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">G1</div>
-              <div id="G2" onclick="selectSeatG2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">G2</div>
-              <div id="G3" onclick="selectSeatG3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">G3</div>
-              <div id="G4" onclick="selectSeatG4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">G4</div>
-              <div id="H1" onclick="selectSeatH1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">H1</div>
-              <div id="H2" onclick="selectSeatH2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">H2</div>
-              <div id="H3" onclick="selectSeatH3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">H3</div>
-              <div id="H4" onclick="selectSeatH4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">H4</div>
-              <div id="I1" onclick="selectSeatI1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">I1</div>
-              <div id="I2" onclick="selectSeatI2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">I2</div>
-              <div id="I3" onclick="selectSeatI3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">I3</div>
-              <div id="I4" onclick="selectSeatI4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">I4</div>
-              <div id="J1" onclick="selectSeatJ1()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">J1</div>
-              <div id="J2" onclick="selectSeatJ2()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">J2</div>
-              <div id="J3" onclick="selectSeatJ3()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">J3</div>
-              <div id="J4" onclick="selectSeatJ4()" class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">J4</div>
-            </div> 
+              <div id="A1" onclick="selectSeatA1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                A1</div>
+              <div id="A2" onclick="selectSeatA2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                A2</div>
+              <div id="A3" onclick="selectSeatA3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                A3</div>
+              <div id="A4" onclick="selectSeatA4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                A4</div>
+              <div id="B1" onclick="selectSeatB1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                B1</div>
+              <div id="B2" onclick="selectSeatB2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                B2</div>
+              <div id="B3" onclick="selectSeatB3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                B3</div>
+              <div id="B4" onclick="selectSeatB4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                B4</div>
+              <div id="C1" onclick="selectSeatC1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                C1</div>
+              <div id="C2" onclick="selectSeatC2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                C2</div>
+              <div id="C3" onclick="selectSeatC3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                C3</div>
+              <div id="C4" onclick="selectSeatC4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                C4</div>
+              <div id="D1" onclick="selectSeatD1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                D1</div>
+              <div id="D2" onclick="selectSeatD2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                D2</div>
+              <div id="D3" onclick="selectSeatD3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                D3</div>
+              <div id="D4" onclick="selectSeatD4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                D4</div>
+              <div id="E1" onclick="selectSeatE1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                E1</div>
+              <div id="E2" onclick="selectSeatE2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                E2</div>
+              <div id="E3" onclick="selectSeatE3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                E3</div>
+              <div id="E4" onclick="selectSeatE4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                E4</div>
+              <div id="F1" onclick="selectSeatF1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                F1</div>
+              <div id="F2" onclick="selectSeatF2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                F2</div>
+              <div id="F3" onclick="selectSeatF3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                F3</div>
+              <div id="F4" onclick="selectSeatF4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                F4</div>
+              <div id="G1" onclick="selectSeatG1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                G1</div>
+              <div id="G2" onclick="selectSeatG2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                G2</div>
+              <div id="G3" onclick="selectSeatG3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                G3</div>
+              <div id="G4" onclick="selectSeatG4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                G4</div>
+              <div id="H1" onclick="selectSeatH1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                H1</div>
+              <div id="H2" onclick="selectSeatH2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                H2</div>
+              <div id="H3" onclick="selectSeatH3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                H3</div>
+              <div id="H4" onclick="selectSeatH4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                H4</div>
+              <div id="I1" onclick="selectSeatI1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                I1</div>
+              <div id="I2" onclick="selectSeatI2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                I2</div>
+              <div id="I3" onclick="selectSeatI3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                I3</div>
+              <div id="I4" onclick="selectSeatI4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                I4</div>
+              <div id="J1" onclick="selectSeatJ1()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                J1</div>
+              <div id="J2" onclick="selectSeatJ2()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                J2</div>
+              <div id="J3" onclick="selectSeatJ3()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                J3</div>
+              <div id="J4" onclick="selectSeatJ4()"
+                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                J4</div>
+            </div>
 
           </div>
 

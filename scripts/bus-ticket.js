@@ -165,9 +165,12 @@ function selectSeatC1() {
     clickCountC1 = clickCountC1 + 1;
     if (clickCountC1 % 2 !== 0) {
         setBackgroundColorById('C1');
+        addSeat('C1');
+
     }
     else {
         removeBackgroundColorById('C1')
+        removeSeat('C1');
     }
 
 }
@@ -175,9 +178,11 @@ function selectSeatC2() {
     clickCountC2 = clickCountC2 + 1;
     if (clickCountC2 % 2 !== 0) {
         setBackgroundColorById('C2');
+        addSeat('C2');
     }
     else {
-        removeBackgroundColorById('C2')
+        removeBackgroundColorById('C2');
+        removeSeat('C2');
     }
 
 }
@@ -185,9 +190,11 @@ function selectSeatC3() {
     clickCountC3 = clickCountC3 + 1;
     if (clickCountC3 % 2 !== 0) {
         setBackgroundColorById('C3');
+        addSeat('C3');
     }
     else {
-        removeBackgroundColorById('C3')
+        removeBackgroundColorById('C3');
+        removeSeat('C3');
     }
 
 }
@@ -195,6 +202,8 @@ function selectSeatC4() {
     clickCountC4 = clickCountC4 + 1;
     if (clickCountC4 % 2 !== 0) {
         setBackgroundColorById('C4');
+        addSeat('C1');
+        removeSeat('C1');
     }
     else {
         removeBackgroundColorById('C4')
