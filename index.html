@@ -15,616 +15,663 @@
 
 <body>
 
-  <header>
+  <section id="home-screen">
+    <header>
 
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute z-30 font-semibold">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
           </div>
-          <ul tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute z-30 font-semibold">
+          <a class="btn btn-ghost text-xl">E-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 font-semibold">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Destination</a></li>
             <li><a>Search</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">P-Ticket</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 font-semibold">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Destination</a></li>
-          <li><a>Search</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <div class="bg-[#1DD1001A] grid grid-cols-2 gap-x-1 lg:gap-2 p-2 lg:p-3 rounded-lg">
-          <h1 class="text-[#1DD100] font-bold text-sm lg:text-base">BUS</h1>
-          <img src="images/bus-icon.png" alt="">
+        <div class="navbar-end">
+          <div class="bg-[#1DD1001A] grid grid-cols-2 gap-x-1 lg:gap-2 p-2 lg:p-3 rounded-lg">
+            <h1 class="text-[#1DD100] font-bold text-sm lg:text-base">BUS</h1>
+            <img src="images/bus-icon.png" alt="">
+          </div>
+
         </div>
-       
       </div>
+
+    </header>
+
+    <main>
+
+      <!-- Banner Section / First section -->
+      <section class="">
+
+        <div class="card bg-base-100 w-full border-none  image-full">
+          <figure><img class="w-screen" src="images/banner.png" alt="..." /></figure>
+          <div class="card-body gap-0">
+            <div class="text-center lg:pt-40 leading-10">
+              <h2 class=" font-extrabold text-4xl lg:text-6xl">End-to-End Travel with <br> <span
+                  class="text-[#1DD100]">Bikel Bela
+                  Paribahan</span> </h2>
+              <p class="pt-6 lg:px-40">Embark on a seamless and comfortable end-to-end travel experience with P
+                Paribahan, where every
+                journey is a testament to convenience and reliability. From the moment you step aboard our
+                modern fleet of buses to the final destination.</p>
+            </div>
+
+            <div class="card-actions justify-center pt-10">
+              <button onclick="scrollToSection('ticket-section-div')" class="btn border-none bg-[#1DD100]">Buy
+                Tickets</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Banner Section below card absolute position -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:mx-20 gap-5 lg:relative mt-5 lg:mt-[-70px] lg:z-10">
+
+          <div class="flex flex-row gap-12 lg:gap-10 lg:py-10 lg:px-5 bg-[#F5F5F5] rounded-lg">
+            <div>
+              <img src="images/people.png" alt="..." />
+            </div>
+            <div class="leading-10">
+              <h1 class="font-extrabold text-3xl">500K+</h1>
+              <p class="text-[#03071263]">Registered users</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-12 lg:gap-10 lg:py-10 lg:px-5 bg-[#F5F5F5] rounded-lg">
+            <div>
+              <img src="images/ticket-cupon.png" alt="..." />
+            </div>
+            <div class="leading-10">
+              <h1 class="font-extrabold text-3xl">1.7 lacks</h1>
+              <p class="text-[#03071263]">Tickets sold</p>
+            </div>
+          </div>
+
+          <div class="flex flex-row gap-12 lg:gap-10 lg:py-10 lg:px-5 bg-[#F5F5F5] rounded-lg">
+            <div>
+              <img src="images/stoppage.png" alt="..." />
+            </div>
+            <div class="leading-10">
+              <h1 class="font-extrabold text-3xl">80K+</h1>
+              <p class="text-[#03071263]">Rental partners</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Best offers for you  -->
+      <section>
+        <h1 class="text-4xl mt-8 text-center">Best offers for you</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-7">
+
+          <div class="card w-full bg-[#FFBF0F]">
+            <div class="card-body flex flex-col lg:flex-row lg:justify-between">
+              <div>
+
+                <h2 class="card-title font-bold text-3xl">15% OFF</h2>
+                <p>on your next purchase use <br> by January 2024 </p>
+              </div>
+
+              <div>
+                <h2 class="card-title font-bold text-3xl">NEW15</h2>
+                <p>Coupon Code</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="absolute pl-96 z-10 mt-[-0.7px]">
+            <img class="h-0 lg:h-0 xl:h-[153px]" src="images/info-devider.png" alt="">
+          </div>
+          <!-- bg-[#F78C9C] -->
+
+          <div class="card w-full bg-[#F78C9C] ">
+            <div class="card-body flex flex-col lg:flex-row lg:justify-between">
+              <div>
+
+                <h2 class="card-title font-bold text-3xl">20% OFF </h2>
+                <p>on your next purchase use<br> by January 2024 </p>
+              </div>
+
+              <div>
+                <h2 class="card-title font-bold text-3xl">Couple 20</h2>
+                <p>Coupon Code</p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="absolute pl-5 lg:pl-[1150px] z-10 mt-[230px] lg:mt-[-0.7px]">
+            <img class="h-0 lg:h-0 xl:h-[153px]" src="images/info-devider.png" alt="">
+          </div>
+
+        </div>
+
+        <button class="btn btn-xs bg-white btn-lg mx-auto block mt-5 text-[#1DD100] border-[#1DD100]">See
+          All Offers</button>
+
+      </section>
+
+      <!-- Bekal Bela Paribahan -->
+
+      <section class="mt-8 bg-[#F7F8F8] rounded-t-3xl border-4 border-t-[#1DD100]">
+
+        <!-- Section text -->
+        <div class="text-center my-5 py-10 lg:pt-20 lg:pb-12">
+          <h1 class="text-3xl lg:text-4xl font-bold">Bikel Bela Paribahan</h1>
+          <p class=" lg:px-64 text-[#03071299]">Bikel Bela Paribahan has elevated the travel experience for its
+            passengers
+            with the
+            introduction of an
+            advanced E-ticket service. The E-ticket service comes with additional features, such as real-time bus
+            tracking, travel alerts, and instant notifications. </p>
+
+        </div>
+
+        <div class="lg:mx-36">
+
+          <!-- Bekal Bela Paribahan -->
+          <!-- Parent div-->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 bg-[#FFFFFF] lg:py-10 rounded-2xl">
+            <!--First Child Div  -->
+            <div class="lg:col-span-9">
+              <div>
+
+                <div class="flex flex-col lg:flex-row justify-between lg:ml-9 lg:my-3 lg:w-full">
+                  <!-- Logo and Bekal bela Paribahan -->
+                  <div class="flex flex-row gap-x-5  w-screen my-6 lg:my-0">
+
+
+                    <div>
+
+                      <img class="h-10 lg:mt-3" src="images/bus-logo.png" alt="">
+
+                    </div>
+                    <div class="lg:leading-6 ">
+
+                      <h1 class="font-bold text-2xl lg:text-3xl">Bekal Bela Paribahan</h1>
+                      <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+
+                    </div>
+
+                  </div>
+
+                  <!-- 40 seats -->
+                  <!-- <div class=""> -->
+
+                  <div class="card w-60 h-12 bg-base-100 shadow-xl bg-[#1DD10026] mx-10 lg:mx-0 mb-5 lg:mb-0">
+                    <div class="">
+
+                      <p class="text-center pt-3 font-medium">40 Seats left</p>
+                    </div>
+                  </div>
+
+                  <!-- </div> -->
+
+
+                </div>
+
+
+
+              </div>
+              <!-- Departure Time  Info Div-->
+              <div class="bg-[#F7F8F8] p-6 lg:p-0 lg:mx-8 rounded-3xl w-screen lg:w-full lg:pb-10">
+                <div class="">
+                  <div
+                    class="grid  grid-cols-2 gap-x-11 lg:gap-x-[500px] leading-8 lg:leading-10 px-1 lg:px-12 pt-5 lg:pt-11 ">
+
+                    <p>Route</p>
+                    <p>Dhaka - Sylhet</p>
+
+                    <p>Departure Time</p>
+                    <p>5:00 PM</p>
+
+                  </div>
+
+
+                </div>
+
+
+                <hr class="lg:mx-11 bg-slate-500 border-t border-dashed">
+
+
+                <!-- Last 3 cards parents -->
+                <div class="flex flex-col lg:flex-row gap-y-3 px-7 lg:px-0 lg:gap-x-1 justify-around mt-4">
+
+                  <div class="card w-52 bg-base-100 shadow-xl h-[56px]">
+
+
+                    <p class="text-center pt-4">Boarding Point - Laxmipur</p>
+
+                  </div>
+
+                  <div class="card w-52 bg-base-100 shadow-xl h-[56px]">
+
+
+                    <p class="text-center pt-4">Boarding Point - Laxmipur</p>
+
+                  </div>
+
+                  <div class="card w-52 bg-base-100 shadow-xl h-[56px]">
+
+
+                    <p class="text-center pt-4">Boarding Point - Laxmipur</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <!--Second Child Div(500 TK)  -->
+            <div class="col-span-3 flex flex-col justify-center items-center pt-10 leading-5 mt-[-100px] lg:mt-0">
+              <img class="h-12 w-12 lg:mb-5" src="images/fare.png" alt="">
+
+              <h1 class="font-bold text-4xl">550 Taka</h1>
+              <p class="text-[#03071299] text-2xl">Per Seat</p>
+
+            </div>
+          </div>
+
+          <!-- Seat Booking -->
+          <!-- Parent Div -->
+          <div class="bg-[#FFFFFF] mt-20 rounded-2xl grid grid-cols-1 lg:grid-cols-2 lg:gap-16 lg:px-10">
+
+            <!-- <div class=""> -->
+            <!-- First Child Div -->
+            <!-- Bus seat div -->
+            <div id="ticket-section-div" class="col-span-1">
+
+              <h1 class="font-bold text-xl p-5">Select Your Seat</h1>
+              <hr class="border-dashed border-t-2 mx-3">
+              <div class="flex flex-row justify-between m-5">
+
+                <div class="flex flex-row gap-3 rounded-lg">
+                  <div>
+                    <img src="images/seat-gray.png" alt="..." />
+                  </div>
+                  <div class="">
+                    <h1 class="text-[#03071280]">Available</h1>
+                  </div>
+                </div>
+
+                <div class="flex flex-row gap-3">
+                  <div>
+                    <img src="images/seat-green-filled.png" alt="..." />
+                  </div>
+                  <div class="">
+                    <h1 class="text-[#1DD100]">Selected</h1>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="border-dashed border-t-2 mx-3">
+
+
+
+
+              <!-- Seat Number Div -->
+              <div class="grid grid-cols-4 gap-5 mt-5 mx-5">
+
+                <div class="col-span-4 flex justify-end ">
+                  <div class="w-14 lg:w-28 h-14 lg:h-16 bg-[#F7F8F8]  flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                      width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
+
+                      <defs>
+                      </defs>
+                      <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                        <path
+                          d="M 45 0 C 20.187 0 0 20.187 0 45 c 0 24.813 20.187 45 45 45 c 24.813 0 45 -20.187 45 -45 C 90 20.187 69.813 0 45 0 z M 45 88 C 21.29 88 2 68.71 2 45 C 2 21.29 21.29 2 45 2 c 23.71 0 43 19.29 43 43 C 88 68.71 68.71 88 45 88 z"
+                          style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                          transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                          d="M 45 37.877 c -3.928 0 -7.123 3.195 -7.123 7.123 s 3.195 7.123 7.123 7.123 s 7.123 -3.195 7.123 -7.123 S 48.928 37.877 45 37.877 z M 45 50.123 c -2.825 0 -5.123 -2.298 -5.123 -5.123 c 0 -2.825 2.298 -5.123 5.123 -5.123 c 2.825 0 5.123 2.298 5.123 5.123 C 50.123 47.825 47.825 50.123 45 50.123 z"
+                          style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                          transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path
+                          d="M 79.564 50.687 c 0.059 -0.357 0.108 -0.717 0.156 -1.078 c 0.023 -0.171 0.045 -0.341 0.065 -0.512 c 0.038 -0.323 0.072 -0.648 0.101 -0.974 c 0.023 -0.255 0.041 -0.509 0.058 -0.764 c 0.017 -0.255 0.036 -0.509 0.048 -0.766 c 0.025 -0.533 0.04 -1.065 0.04 -1.594 c 0 -0.575 -0.015 -1.152 -0.044 -1.728 c -0.019 -0.388 -0.053 -0.772 -0.085 -1.156 c -0.015 -0.181 -0.024 -0.362 -0.042 -0.543 c -0.044 -0.451 -0.103 -0.898 -0.164 -1.344 c -0.016 -0.118 -0.028 -0.236 -0.045 -0.353 c -0.065 -0.44 -0.143 -0.875 -0.224 -1.31 c -0.02 -0.11 -0.035 -0.221 -0.057 -0.331 c -0.001 -0.005 -0.004 -0.008 -0.005 -0.013 C 76.202 22.138 61.998 9.967 45 9.967 c -16.999 0 -31.203 12.171 -34.369 28.256 c -0.001 0.004 -0.004 0.008 -0.005 0.012 c -0.02 0.104 -0.034 0.209 -0.054 0.313 c -0.083 0.443 -0.162 0.887 -0.228 1.335 c -0.015 0.099 -0.024 0.198 -0.038 0.297 c -0.064 0.464 -0.125 0.929 -0.17 1.398 c -0.016 0.163 -0.024 0.326 -0.037 0.489 c -0.033 0.402 -0.069 0.803 -0.088 1.209 C 9.982 43.851 9.967 44.426 9.967 45 c 0 0.529 0.016 1.062 0.04 1.595 c 0.011 0.255 0.031 0.507 0.048 0.76 c 0.018 0.257 0.036 0.514 0.059 0.772 c 0.029 0.323 0.063 0.645 0.1 0.965 c 0.021 0.174 0.044 0.348 0.067 0.523 c 0.047 0.358 0.097 0.716 0.155 1.071 c 0.004 0.023 0.006 0.045 0.01 0.068 c 0.001 0.005 0.004 0.008 0.005 0.013 c 2.419 14.534 13.811 26.063 28.274 28.691 c 0.006 0.001 0.01 0.005 0.016 0.006 c 0.047 0.008 0.094 0.014 0.14 0.022 c 0.445 0.079 0.893 0.15 1.344 0.212 c 0.089 0.012 0.178 0.022 0.267 0.034 c 0.429 0.055 0.859 0.107 1.293 0.146 c 0.181 0.017 0.361 0.027 0.542 0.041 c 0.345 0.026 0.689 0.055 1.036 0.071 c 0.548 0.026 1.095 0.042 1.639 0.042 c 0.543 0 1.09 -0.015 1.638 -0.042 c 0.349 -0.016 0.695 -0.045 1.042 -0.071 c 0.178 -0.014 0.356 -0.024 0.534 -0.041 c 0.435 -0.04 0.867 -0.091 1.298 -0.147 c 0.087 -0.011 0.175 -0.021 0.262 -0.033 c 0.451 -0.062 0.898 -0.133 1.343 -0.212 c 0.048 -0.008 0.096 -0.014 0.144 -0.023 c 0.006 -0.001 0.01 -0.005 0.016 -0.006 c 14.462 -2.628 25.855 -14.158 28.273 -28.691 c 0.001 -0.005 0.004 -0.008 0.005 -0.013 C 79.558 50.732 79.561 50.71 79.564 50.687 z M 50.083 77.635 c -0.798 0.124 -1.594 0.213 -2.388 0.279 c -0.11 0.009 -0.22 0.017 -0.33 0.025 c -1.578 0.115 -3.151 0.115 -4.729 0 c -0.11 -0.008 -0.221 -0.016 -0.331 -0.025 c -0.794 -0.066 -1.59 -0.155 -2.388 -0.279 V 64.731 c 0 -8.348 -6.792 -15.14 -15.139 -15.14 H 12.293 c -0.004 -0.031 -0.008 -0.062 -0.012 -0.093 c -0.091 -0.659 -0.157 -1.32 -0.208 -1.978 c -0.01 -0.133 -0.022 -0.266 -0.03 -0.399 c -0.047 -0.71 -0.075 -1.419 -0.075 -2.121 c 0 -0.516 0.016 -1.029 0.039 -1.539 c 0.01 -0.216 0.027 -0.433 0.042 -0.65 c 0.019 -0.284 0.039 -0.568 0.065 -0.85 c 0.025 -0.269 0.054 -0.539 0.086 -0.808 c 0.026 -0.224 0.055 -0.448 0.086 -0.671 c 0.04 -0.291 0.082 -0.581 0.13 -0.871 c 0.01 -0.062 0.023 -0.124 0.033 -0.186 h 6.802 c 6.896 0 14.047 -1.661 21.253 -4.936 c 2.818 -1.28 6.181 -1.28 8.995 0 c 0 0 0 0 0 0 c 7.208 3.275 14.359 4.936 21.255 4.936 h 6.803 c 0.011 0.067 0.025 0.133 0.036 0.2 c 0.046 0.28 0.086 0.561 0.125 0.842 c 0.032 0.231 0.062 0.463 0.089 0.696 c 0.031 0.264 0.06 0.527 0.084 0.791 c 0.026 0.287 0.047 0.575 0.066 0.864 c 0.014 0.213 0.031 0.426 0.041 0.639 c 0.024 0.511 0.039 1.024 0.039 1.541 c 0 0.701 -0.029 1.409 -0.075 2.118 c -0.009 0.136 -0.021 0.271 -0.031 0.406 c -0.051 0.658 -0.118 1.318 -0.209 1.977 c -0.004 0.03 -0.007 0.06 -0.012 0.09 H 65.222 c -8.348 0 -15.139 6.792 -15.139 15.14 V 77.635 z M 45 11.967 c 15.609 0 28.714 10.885 32.147 25.46 h -6.396 c -6.608 0 -13.481 -1.601 -20.427 -4.757 c -3.331 -1.515 -7.312 -1.515 -10.65 0 c -6.945 3.156 -13.817 4.756 -20.426 4.756 h -6.396 C 16.287 22.852 29.392 11.967 45 11.967 z M 12.629 51.592 h 12.149 c 7.245 0 13.139 5.895 13.139 13.14 v 12.529 C 25.216 74.474 15.226 64.363 12.629 51.592 z M 52.083 77.26 V 64.731 c 0 -7.245 5.894 -13.14 13.139 -13.14 h 12.149 C 74.775 64.363 64.785 74.474 52.083 77.26 z"
+                          style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                          transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+
+
+                <div id="A1" onclick="selectSeatA1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  A1</div>
+                <div id="A2" onclick="selectSeatA2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  A2</div>
+                <div id="A3" onclick="selectSeatA3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  A3</div>
+                <div id="A4" onclick="selectSeatA4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  A4</div>
+                <div id="B1" onclick="selectSeatB1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  B1</div>
+                <div id="B2" onclick="selectSeatB2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  B2</div>
+                <div id="B3" onclick="selectSeatB3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  B3</div>
+                <div id="B4" onclick="selectSeatB4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  B4</div>
+                <div id="C1" onclick="selectSeatC1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  C1</div>
+                <div id="C2" onclick="selectSeatC2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  C2</div>
+                <div id="C3" onclick="selectSeatC3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  C3</div>
+                <div id="C4" onclick="selectSeatC4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  C4</div>
+                <div id="D1" onclick="selectSeatD1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  D1</div>
+                <div id="D2" onclick="selectSeatD2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  D2</div>
+                <div id="D3" onclick="selectSeatD3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  D3</div>
+                <div id="D4" onclick="selectSeatD4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  D4</div>
+                <div id="E1" onclick="selectSeatE1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  E1</div>
+                <div id="E2" onclick="selectSeatE2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  E2</div>
+                <div id="E3" onclick="selectSeatE3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  E3</div>
+                <div id="E4" onclick="selectSeatE4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  E4</div>
+                <div id="F1" onclick="selectSeatF1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  F1</div>
+                <div id="F2" onclick="selectSeatF2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  F2</div>
+                <div id="F3" onclick="selectSeatF3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  F3</div>
+                <div id="F4" onclick="selectSeatF4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  F4</div>
+                <div id="G1" onclick="selectSeatG1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  G1</div>
+                <div id="G2" onclick="selectSeatG2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  G2</div>
+                <div id="G3" onclick="selectSeatG3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  G3</div>
+                <div id="G4" onclick="selectSeatG4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  G4</div>
+                <div id="H1" onclick="selectSeatH1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  H1</div>
+                <div id="H2" onclick="selectSeatH2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  H2</div>
+                <div id="H3" onclick="selectSeatH3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  H3</div>
+                <div id="H4" onclick="selectSeatH4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  H4</div>
+                <div id="I1" onclick="selectSeatI1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  I1</div>
+                <div id="I2" onclick="selectSeatI2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  I2</div>
+                <div id="I3" onclick="selectSeatI3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  I3</div>
+                <div id="I4" onclick="selectSeatI4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  I4</div>
+                <div id="J1" onclick="selectSeatJ1()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  J1</div>
+                <div id="J2" onclick="selectSeatJ2()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  J2</div>
+                <div id="J3" onclick="selectSeatJ3()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  J3</div>
+                <div id="J4" onclick="selectSeatJ4()"
+                  class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
+                  J4</div>
+              </div>
+
+            </div>
+
+            <!-- </div> -->
+
+            <!-- Second Child Div  -->
+            <div>
+              <h1 class="font-bold text-xl p-5">Select Your Seat</h1>
+              <hr class="border-dashed border-t-2 mx-3">
+              <!-- Money Calculate and Cuppon Div -->
+              <div class="bg-[#F7F8F8] pb-10 pt-6 px-8 mt-5 lg:mt-10">
+                <!-- Seat    class    price -->
+                <div class="flex flex-row justify-between  font-medium py-3 lg:text-lg">
+                  <div>
+                    <h1>Seat <span id="number-of-seat" class="bg-[#1DD100] px-2 py-0 text-white rounded">0</span></h1>
+                  </div>
+                  <div>
+                    <h1>Class</h1>
+                  </div>
+                  <div>
+                    <h1>Price</h1>
+                  </div>
+                </div>
+                <!-- Horizontal Line -->
+                <hr>
+                <!-- c2    economy   550 -->
+
+                <div class="text-[#03071299]">
+                  <div id="seat-first-row" class="flex flex-row justify-between py-3 hidden">
+                    <h1 id="first-seat">C2</h1>
+                    <h1>Economy</h1>
+                    <h1>550 </h1>
+                  </div>
+
+                  <div id="seat-second-row" class="flex flex-row justify-between py-3 hidden">
+                    <h1 id="second-seat">C2</h1>
+                    <h1>Economy</h1>
+                    <h1>550 </h1>
+                  </div>
+
+                  <div id="seat-third-row" class="flex flex-row justify-between py-3 hidden">
+                    <h1 id="third-seat">C2</h1>
+                    <h1>Economy</h1>
+                    <h1>550 </h1>
+                  </div>
+
+                  <div id="seat-forth-row" class="flex flex-row justify-between py-3 hidden">
+                    <h1 id="forth-seat">C2</h1>
+                    <h1>Economy</h1>
+                    <h1>550 </h1>
+                  </div>
+
+                </div>
+                <hr>
+
+                <div class="flex flex-row justify-between my-5 font-medium lg:text-lg">
+                  <h1>Total Price</h2>
+                    <h1>BDT <span id="total-fair">0</span></h1>
+                </div>
+
+                <input type="text" placeholder="Have any copupon?" class="input w-full" />
+                <button class="btn bg-[#1DD100] text-white absolute ml-[-82px] w-20">APPLY</button>
+
+                <div class="flex flex-row justify-between mt-5 font-medium lg:text-lg">
+                  <h1>Grand Total</h1>
+                  <h1>BDT <span>1100</span></h1>
+                </div>
+
+              </div>
+
+              <!-- Passenger info and NEXT button div -->
+              <div class="mt-5 lg:mt-8">
+
+                <div class="mt-3">
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text text-lg font-medium">Passenger Name*</span>
+                    </div>
+                    <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
+                </div>
+
+                <div class="mt-3">
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text text-lg font-medium">Phone Number*</span>
+                    </div>
+                    <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full" />
+                </div>
+
+                <div class="mt-3">
+                  <label class="form-control w-full">
+                    <div class="label">
+                      <span class="label-text text-lg font-medium">Email</span>
+                    </div>
+                    <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full" />
+                </div>
+
+                <button onclick="nextClick()" class="btn btn-active w-full bg-[#1DD100] text-white mt-5 lg:mt-10">NEXT</button>
+
+                <div class="flex justify-evenly mt-3 text-[#03071299]">
+                  <a class="link link-neutral">Terms and Conditions</a>
+                  <a class="link link-neutral">Cancellation Policy</a>
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+
+
+            <!-- Parent div end -->
+          </div>
+
+
+        </div>
+
+
+
+
+      </section>
+
+
+
+
+
+    </main>
+
+    <footer class="mt-10 footer items-center p-4 bg-neutral text-neutral-content">
+      <aside class="items-center grid-flow-col">
+        <p> <span>E-Ticket</span> <br>E-Ticket is a digital platform to make your daily commuting better.</p>
+      </aside>
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <p>Download our app </p>
+        <div class="grid grid-cols-2">
+          <div><img src="images/playstore.png" alt=""></div>
+          <div>
+            <h1> <span>GET IT ON</span> <span>Goggle Play</span> </h1>
+          </div>
+
+
+
+        </div>
+      </nav>
+    </footer>
+
+
+  </section>
+
+  <section id="success-page" class="lg:bg-slate-300 h-screen relative hidden">
+
+    <div class="bg-white absolute mt-2 lg:mt-16 lg:mx-56 py-20 lg:p-28 rounded-2xl">
+      <div class="text-center">
+
+        <img class="mx-auto" src="images/success.png" alt="">
+        <h1 class="text-center text-[#27AE60] text-4xl font-bold my-7">SUCCESS</h1>
+        <p class="text-[#4A4A4A] font-semibold">Thank you for Booking Our Bus Seats. We are working hard to find 
+          the best service and deals for you. </p>
+          <p class="text-slate-500">Shortly
+            you will find a confirmation in your email. </p>
+        <button onclick="continueClick()"  class="my-7 btn btn-xs btn-lg bg-[#27AE60] text-white">Continue</button>
+
+      </div>
+
     </div>
 
-  </header>
+  </section>
 
-  <main>
 
-    <!-- Banner Section / First section -->
-    <section class="">
 
-      <div class="card bg-base-100 w-full border-none  image-full">
-        <figure><img class="w-screen" src="images/banner.png" alt="..." /></figure>
-        <div class="card-body gap-0">
-          <div class="text-center lg:pt-40 leading-10">
-            <h2 class=" font-extrabold text-4xl lg:text-6xl">End-to-End Travel with <br> <span
-                class="text-[#1DD100]">Bikel Bela
-                Paribahan</span> </h2>
-            <p class="pt-6 lg:px-40">Embark on a seamless and comfortable end-to-end travel experience with P
-              Paribahan, where every
-              journey is a testament to convenience and reliability. From the moment you step aboard our
-              modern fleet of buses to the final destination.</p>
-          </div>
 
-          <div class="card-actions justify-center pt-10">
-            <button onclick="scrollToSection('ticket-section-div')" class="btn border-none bg-[#1DD100]">Buy
-              Tickets</button>
-          </div>
-        </div>
-      </div>
 
 
 
-      <!-- Banner Section below card absolute position -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 lg:mx-20 gap-5 lg:relative mt-5 lg:mt-[-70px] lg:z-10">
 
-        <div class="flex flex-row gap-12 lg:gap-10 lg:py-10 lg:px-5 bg-[#F5F5F5] rounded-lg">
-          <div>
-            <img src="images/people.png" alt="..." />
-          </div>
-          <div class="leading-10">
-            <h1 class="font-extrabold text-3xl">500K+</h1>
-            <p class="text-[#03071263]">Registered users</p>
-          </div>
-        </div>
 
-        <div class="flex flex-row gap-12 lg:gap-10 lg:py-10 lg:px-5 bg-[#F5F5F5] rounded-lg">
-          <div>
-            <img src="images/ticket-cupon.png" alt="..." />
-          </div>
-          <div class="leading-10">
-            <h1 class="font-extrabold text-3xl">1.7 lacks</h1>
-            <p class="text-[#03071263]">Tickets sold</p>
-          </div>
-        </div>
 
-        <div class="flex flex-row gap-12 lg:gap-10 lg:py-10 lg:px-5 bg-[#F5F5F5] rounded-lg">
-          <div>
-            <img src="images/stoppage.png" alt="..." />
-          </div>
-          <div class="leading-10">
-            <h1 class="font-extrabold text-3xl">80K+</h1>
-            <p class="text-[#03071263]">Rental partners</p>
-          </div>
-        </div>
 
-      </div>
-
-    </section>
-
-    <!-- Best offers for you  -->
-    <section>
-      <h1 class="text-4xl mt-8 text-center">Best offers for you</h1>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-7">
-
-        <div class="card w-full bg-[#FFBF0F]">
-          <div class="card-body flex flex-col lg:flex-row lg:justify-between">
-            <div>
-
-              <h2 class="card-title font-bold text-3xl">15% OFF</h2>
-              <p>on your next purchase use <br> by January 2024 </p>
-            </div>
-
-            <div>
-              <h2 class="card-title font-bold text-3xl">NEW15</h2>
-              <p>Coupon Code</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="absolute pl-96 z-10 mt-[-0.7px]">
-          <img class="h-0 lg:h-0 xl:h-[153px]" src="images/info-devider.png" alt="">
-        </div>
-        <!-- bg-[#F78C9C] -->
-
-        <div class="card w-full bg-[#F78C9C] ">
-          <div class="card-body flex flex-col lg:flex-row lg:justify-between">
-            <div>
-
-              <h2 class="card-title font-bold text-3xl">20% OFF </h2>
-              <p>on your next purchase use<br> by January 2024 </p>
-            </div>
-
-            <div>
-              <h2 class="card-title font-bold text-3xl">Couple 20</h2>
-              <p>Coupon Code</p>
-            </div>
-
-
-          </div>
-        </div>
-        <div class="absolute pl-5 lg:pl-[1150px] z-10 mt-[230px] lg:mt-[-0.7px]">
-          <img class="h-0 lg:h-0 xl:h-[153px]" src="images/info-devider.png" alt="">
-        </div>
-
-      </div>
-
-      <button class="btn btn-xs bg-white btn-lg mx-auto block mt-5 text-[#1DD100] border-[#1DD100]">See
-        All Offers</button>
-
-    </section>
-
-    <!-- Bekal Bela Paribahan -->
-
-    <section class="mt-8 bg-[#F7F8F8] rounded-t-3xl border-4 border-t-[#1DD100]">
-
-      <!-- Section text -->
-      <div class="text-center my-5 py-10 lg:pt-20 lg:pb-12">
-        <h1 class="text-3xl lg:text-4xl font-bold">Bikel Bela Paribahan</h1>
-        <p class=" lg:px-64 text-[#03071299]">Bikel Bela Paribahan has elevated the travel experience for its passengers
-          with the
-          introduction of an
-          advanced E-ticket service. The E-ticket service comes with additional features, such as real-time bus
-          tracking, travel alerts, and instant notifications. </p>
-
-      </div>
-
-      <div class="lg:mx-36">
-
-        <!-- Bekal Bela Paribahan -->
-        <!-- Parent div-->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 bg-[#FFFFFF] lg:py-10 rounded-2xl">
-          <!--First Child Div  -->
-          <div class="lg:col-span-9">
-            <div>
-
-              <div class="flex flex-col lg:flex-row justify-between lg:ml-9 lg:my-3 lg:w-full">
-                <!-- Logo and Bekal bela Paribahan -->
-                <div class="flex flex-row gap-x-5  w-screen my-6 lg:my-0">
-
-
-                  <div>
-
-                    <img class="h-10 lg:mt-3" src="images/bus-logo.png" alt="">
-
-                  </div>
-                  <div class="lg:leading-6 ">
-
-                    <h1 class="font-bold text-2xl lg:text-3xl">Bekal Bela Paribahan</h1>
-                    <p class="text-[#03071299]">Coach-009-WEB ! AC_Business</p>
-
-                  </div>
-
-                </div>
-
-                <!-- 40 seats -->
-                <!-- <div class=""> -->
-
-                <div class="card w-60 h-12 bg-base-100 shadow-xl bg-[#1DD10026] mx-10 lg:mx-0 mb-5 lg:mb-0">
-                  <div class="">
-
-                    <p class="text-center pt-3 font-medium">40 Seats left</p>
-                  </div>
-                </div>
-
-                <!-- </div> -->
-
-
-              </div>
-
-
-
-            </div>
-            <!-- Departure Time  Info Div-->
-            <div class="bg-[#F7F8F8] p-6 lg:p-0 lg:mx-8 rounded-3xl w-screen lg:w-full lg:pb-10">
-              <div class="">
-                <div
-                  class="grid  grid-cols-2 gap-x-11 lg:gap-x-[500px] leading-8 lg:leading-10 px-1 lg:px-12 pt-5 lg:pt-11 ">
-
-                  <p>Route</p>
-                  <p>Dhaka - Sylhet</p>
-
-                  <p>Departure Time</p>
-                  <p>5:00 PM</p>
-
-                </div>
-
-
-              </div>
-
-
-              <hr class="lg:mx-11 bg-slate-500 border-t border-dashed">
-
-
-              <!-- Last 3 cards parents -->
-              <div class="flex flex-col lg:flex-row gap-y-3 px-7 lg:px-0 lg:gap-x-1 justify-around mt-4">
-
-                <div class="card w-52 bg-base-100 shadow-xl h-[56px]">
-
-
-                  <p class="text-center pt-4">Boarding Point - Laxmipur</p>
-
-                </div>
-
-                <div class="card w-52 bg-base-100 shadow-xl h-[56px]">
-
-
-                  <p class="text-center pt-4">Boarding Point - Laxmipur</p>
-
-                </div>
-
-                <div class="card w-52 bg-base-100 shadow-xl h-[56px]">
-
-
-                  <p class="text-center pt-4">Boarding Point - Laxmipur</p>
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-          </div>
-
-          <!--Second Child Div(500 TK)  -->
-          <div class="col-span-3 flex flex-col justify-center items-center pt-10 leading-5 mt-[-100px] lg:mt-0">
-            <img class="h-12 w-12 lg:mb-5" src="images/fare.png" alt="">
-
-            <h1 class="font-bold text-4xl">550 Taka</h1>
-            <p class="text-[#03071299] text-2xl">Per Seat</p>
-
-          </div>
-        </div>
-
-        <!-- Seat Booking -->
-        <!-- Parent Div -->
-        <div class="bg-[#FFFFFF] mt-20 rounded-2xl grid grid-cols-1 lg:grid-cols-2 lg:gap-16 lg:px-10">
-
-          <!-- <div class=""> -->
-          <!-- First Child Div -->
-          <!-- Bus seat div -->
-          <div id="ticket-section-div" class="col-span-1">
-
-            <h1 class="font-bold text-xl p-5">Select Your Seat</h1>
-            <hr class="border-dashed border-t-2 mx-3">
-            <div class="flex flex-row justify-between m-5">
-
-              <div class="flex flex-row gap-3 rounded-lg">
-                <div>
-                  <img src="images/seat-gray.png" alt="..." />
-                </div>
-                <div class="">
-                  <h1 class="text-[#03071280]">Available</h1>
-                </div>
-              </div>
-
-              <div class="flex flex-row gap-3">
-                <div>
-                  <img src="images/seat-green-filled.png" alt="..." />
-                </div>
-                <div class="">
-                  <h1 class="text-[#1DD100]">Selected</h1>
-                </div>
-              </div>
-            </div>
-
-            <hr class="border-dashed border-t-2 mx-3">
-
-
-
-
-            <!-- Seat Number Div -->
-            <div class="grid grid-cols-4 gap-5 mt-5 mx-5">
-
-              <div class="col-span-4 flex justify-end ">
-                <div class="w-14 lg:w-28 h-14 lg:h-16 bg-[#F7F8F8]  flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    width="25" height="25" viewBox="0 0 256 256" xml:space="preserve">
-
-                    <defs>
-                    </defs>
-                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
-                      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                      <path
-                        d="M 45 0 C 20.187 0 0 20.187 0 45 c 0 24.813 20.187 45 45 45 c 24.813 0 45 -20.187 45 -45 C 90 20.187 69.813 0 45 0 z M 45 88 C 21.29 88 2 68.71 2 45 C 2 21.29 21.29 2 45 2 c 23.71 0 43 19.29 43 43 C 88 68.71 68.71 88 45 88 z"
-                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                      <path
-                        d="M 45 37.877 c -3.928 0 -7.123 3.195 -7.123 7.123 s 3.195 7.123 7.123 7.123 s 7.123 -3.195 7.123 -7.123 S 48.928 37.877 45 37.877 z M 45 50.123 c -2.825 0 -5.123 -2.298 -5.123 -5.123 c 0 -2.825 2.298 -5.123 5.123 -5.123 c 2.825 0 5.123 2.298 5.123 5.123 C 50.123 47.825 47.825 50.123 45 50.123 z"
-                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                      <path
-                        d="M 79.564 50.687 c 0.059 -0.357 0.108 -0.717 0.156 -1.078 c 0.023 -0.171 0.045 -0.341 0.065 -0.512 c 0.038 -0.323 0.072 -0.648 0.101 -0.974 c 0.023 -0.255 0.041 -0.509 0.058 -0.764 c 0.017 -0.255 0.036 -0.509 0.048 -0.766 c 0.025 -0.533 0.04 -1.065 0.04 -1.594 c 0 -0.575 -0.015 -1.152 -0.044 -1.728 c -0.019 -0.388 -0.053 -0.772 -0.085 -1.156 c -0.015 -0.181 -0.024 -0.362 -0.042 -0.543 c -0.044 -0.451 -0.103 -0.898 -0.164 -1.344 c -0.016 -0.118 -0.028 -0.236 -0.045 -0.353 c -0.065 -0.44 -0.143 -0.875 -0.224 -1.31 c -0.02 -0.11 -0.035 -0.221 -0.057 -0.331 c -0.001 -0.005 -0.004 -0.008 -0.005 -0.013 C 76.202 22.138 61.998 9.967 45 9.967 c -16.999 0 -31.203 12.171 -34.369 28.256 c -0.001 0.004 -0.004 0.008 -0.005 0.012 c -0.02 0.104 -0.034 0.209 -0.054 0.313 c -0.083 0.443 -0.162 0.887 -0.228 1.335 c -0.015 0.099 -0.024 0.198 -0.038 0.297 c -0.064 0.464 -0.125 0.929 -0.17 1.398 c -0.016 0.163 -0.024 0.326 -0.037 0.489 c -0.033 0.402 -0.069 0.803 -0.088 1.209 C 9.982 43.851 9.967 44.426 9.967 45 c 0 0.529 0.016 1.062 0.04 1.595 c 0.011 0.255 0.031 0.507 0.048 0.76 c 0.018 0.257 0.036 0.514 0.059 0.772 c 0.029 0.323 0.063 0.645 0.1 0.965 c 0.021 0.174 0.044 0.348 0.067 0.523 c 0.047 0.358 0.097 0.716 0.155 1.071 c 0.004 0.023 0.006 0.045 0.01 0.068 c 0.001 0.005 0.004 0.008 0.005 0.013 c 2.419 14.534 13.811 26.063 28.274 28.691 c 0.006 0.001 0.01 0.005 0.016 0.006 c 0.047 0.008 0.094 0.014 0.14 0.022 c 0.445 0.079 0.893 0.15 1.344 0.212 c 0.089 0.012 0.178 0.022 0.267 0.034 c 0.429 0.055 0.859 0.107 1.293 0.146 c 0.181 0.017 0.361 0.027 0.542 0.041 c 0.345 0.026 0.689 0.055 1.036 0.071 c 0.548 0.026 1.095 0.042 1.639 0.042 c 0.543 0 1.09 -0.015 1.638 -0.042 c 0.349 -0.016 0.695 -0.045 1.042 -0.071 c 0.178 -0.014 0.356 -0.024 0.534 -0.041 c 0.435 -0.04 0.867 -0.091 1.298 -0.147 c 0.087 -0.011 0.175 -0.021 0.262 -0.033 c 0.451 -0.062 0.898 -0.133 1.343 -0.212 c 0.048 -0.008 0.096 -0.014 0.144 -0.023 c 0.006 -0.001 0.01 -0.005 0.016 -0.006 c 14.462 -2.628 25.855 -14.158 28.273 -28.691 c 0.001 -0.005 0.004 -0.008 0.005 -0.013 C 79.558 50.732 79.561 50.71 79.564 50.687 z M 50.083 77.635 c -0.798 0.124 -1.594 0.213 -2.388 0.279 c -0.11 0.009 -0.22 0.017 -0.33 0.025 c -1.578 0.115 -3.151 0.115 -4.729 0 c -0.11 -0.008 -0.221 -0.016 -0.331 -0.025 c -0.794 -0.066 -1.59 -0.155 -2.388 -0.279 V 64.731 c 0 -8.348 -6.792 -15.14 -15.139 -15.14 H 12.293 c -0.004 -0.031 -0.008 -0.062 -0.012 -0.093 c -0.091 -0.659 -0.157 -1.32 -0.208 -1.978 c -0.01 -0.133 -0.022 -0.266 -0.03 -0.399 c -0.047 -0.71 -0.075 -1.419 -0.075 -2.121 c 0 -0.516 0.016 -1.029 0.039 -1.539 c 0.01 -0.216 0.027 -0.433 0.042 -0.65 c 0.019 -0.284 0.039 -0.568 0.065 -0.85 c 0.025 -0.269 0.054 -0.539 0.086 -0.808 c 0.026 -0.224 0.055 -0.448 0.086 -0.671 c 0.04 -0.291 0.082 -0.581 0.13 -0.871 c 0.01 -0.062 0.023 -0.124 0.033 -0.186 h 6.802 c 6.896 0 14.047 -1.661 21.253 -4.936 c 2.818 -1.28 6.181 -1.28 8.995 0 c 0 0 0 0 0 0 c 7.208 3.275 14.359 4.936 21.255 4.936 h 6.803 c 0.011 0.067 0.025 0.133 0.036 0.2 c 0.046 0.28 0.086 0.561 0.125 0.842 c 0.032 0.231 0.062 0.463 0.089 0.696 c 0.031 0.264 0.06 0.527 0.084 0.791 c 0.026 0.287 0.047 0.575 0.066 0.864 c 0.014 0.213 0.031 0.426 0.041 0.639 c 0.024 0.511 0.039 1.024 0.039 1.541 c 0 0.701 -0.029 1.409 -0.075 2.118 c -0.009 0.136 -0.021 0.271 -0.031 0.406 c -0.051 0.658 -0.118 1.318 -0.209 1.977 c -0.004 0.03 -0.007 0.06 -0.012 0.09 H 65.222 c -8.348 0 -15.139 6.792 -15.139 15.14 V 77.635 z M 45 11.967 c 15.609 0 28.714 10.885 32.147 25.46 h -6.396 c -6.608 0 -13.481 -1.601 -20.427 -4.757 c -3.331 -1.515 -7.312 -1.515 -10.65 0 c -6.945 3.156 -13.817 4.756 -20.426 4.756 h -6.396 C 16.287 22.852 29.392 11.967 45 11.967 z M 12.629 51.592 h 12.149 c 7.245 0 13.139 5.895 13.139 13.14 v 12.529 C 25.216 74.474 15.226 64.363 12.629 51.592 z M 52.083 77.26 V 64.731 c 0 -7.245 5.894 -13.14 13.139 -13.14 h 12.149 C 74.775 64.363 64.785 74.474 52.083 77.26 z"
-                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
-                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-
-
-              <div id="A1" onclick="selectSeatA1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                A1</div>
-              <div id="A2" onclick="selectSeatA2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                A2</div>
-              <div id="A3" onclick="selectSeatA3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                A3</div>
-              <div id="A4" onclick="selectSeatA4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                A4</div>
-              <div id="B1" onclick="selectSeatB1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                B1</div>
-              <div id="B2" onclick="selectSeatB2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                B2</div>
-              <div id="B3" onclick="selectSeatB3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                B3</div>
-              <div id="B4" onclick="selectSeatB4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                B4</div>
-              <div id="C1" onclick="selectSeatC1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                C1</div>
-              <div id="C2" onclick="selectSeatC2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                C2</div>
-              <div id="C3" onclick="selectSeatC3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                C3</div>
-              <div id="C4" onclick="selectSeatC4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                C4</div>
-              <div id="D1" onclick="selectSeatD1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                D1</div>
-              <div id="D2" onclick="selectSeatD2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                D2</div>
-              <div id="D3" onclick="selectSeatD3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                D3</div>
-              <div id="D4" onclick="selectSeatD4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                D4</div>
-              <div id="E1" onclick="selectSeatE1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                E1</div>
-              <div id="E2" onclick="selectSeatE2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                E2</div>
-              <div id="E3" onclick="selectSeatE3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                E3</div>
-              <div id="E4" onclick="selectSeatE4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                E4</div>
-              <div id="F1" onclick="selectSeatF1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                F1</div>
-              <div id="F2" onclick="selectSeatF2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                F2</div>
-              <div id="F3" onclick="selectSeatF3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                F3</div>
-              <div id="F4" onclick="selectSeatF4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                F4</div>
-              <div id="G1" onclick="selectSeatG1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                G1</div>
-              <div id="G2" onclick="selectSeatG2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                G2</div>
-              <div id="G3" onclick="selectSeatG3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                G3</div>
-              <div id="G4" onclick="selectSeatG4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                G4</div>
-              <div id="H1" onclick="selectSeatH1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                H1</div>
-              <div id="H2" onclick="selectSeatH2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                H2</div>
-              <div id="H3" onclick="selectSeatH3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                H3</div>
-              <div id="H4" onclick="selectSeatH4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                H4</div>
-              <div id="I1" onclick="selectSeatI1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                I1</div>
-              <div id="I2" onclick="selectSeatI2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                I2</div>
-              <div id="I3" onclick="selectSeatI3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                I3</div>
-              <div id="I4" onclick="selectSeatI4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                I4</div>
-              <div id="J1" onclick="selectSeatJ1()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                J1</div>
-              <div id="J2" onclick="selectSeatJ2()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                J2</div>
-              <div id="J3" onclick="selectSeatJ3()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                J3</div>
-              <div id="J4" onclick="selectSeatJ4()"
-                class="w-full h-14 bg-[#F7F8F8] text-[#03071280] flex items-center justify-center cursor-pointer font-mono rounded-md">
-                J4</div>
-            </div>
-
-          </div>
-
-          <!-- </div> -->
-
-          <!-- Second Child Div  -->
-          <div>
-            <h1 class="font-bold text-xl p-5">Select Your Seat</h1>
-            <hr class="border-dashed border-t-2 mx-3">
-            <!-- Money Calculate and Cuppon Div -->
-            <div class="bg-[#F7F8F8] pb-10 pt-6 px-8 mt-5 lg:mt-10">
-              <!-- Seat    class    price -->
-              <div class="flex flex-row justify-between  font-medium py-3 lg:text-lg">
-                <div>
-                  <h1>Seat <span id="number-of-seat" class="bg-[#1DD100] px-2 py-0 text-white rounded">0</span></h1>
-                </div>
-                <div>
-                  <h1>Class</h1>
-                </div>
-                <div>
-                  <h1>Price</h1>
-                </div>
-              </div>
-              <!-- Horizontal Line -->
-              <hr>
-              <!-- c2    economy   550 -->
-
-              <div class="text-[#03071299]">
-                <div id="seat-first-row" class="flex flex-row justify-between py-3 hidden">
-                  <h1 id="first-seat">C2</h1>
-                  <h1>Economy</h1>
-                  <h1>550 </h1>
-                </div>
-
-                <div id="seat-second-row" class="flex flex-row justify-between py-3 hidden">
-                  <h1 id="second-seat">C2</h1>
-                  <h1>Economy</h1>
-                  <h1>550 </h1>
-                </div>
-
-                <div id="seat-third-row" class="flex flex-row justify-between py-3 hidden">
-                  <h1 id="third-seat">C2</h1>
-                  <h1>Economy</h1>
-                  <h1>550 </h1>
-                </div>
-
-                <div id="seat-forth-row" class="flex flex-row justify-between py-3 hidden">
-                  <h1 id="forth-seat">C2</h1>
-                  <h1>Economy</h1>
-                  <h1>550 </h1>
-                </div>
-
-              </div>
-              <hr>
-
-              <div class="flex flex-row justify-between my-5 font-medium lg:text-lg">
-                <h1>Total Price</h2>
-                  <h1>BDT <span id="total-fair">0</span></h1>
-              </div>
-
-              <input type="text" placeholder="Have any copupon?" class="input w-full" />
-              <button class="btn bg-[#1DD100] text-white absolute ml-[-82px] w-20">APPLY</button>
-
-              <div class="flex flex-row justify-between mt-5 font-medium lg:text-lg">
-                <h1>Grand Total</h1>
-                <h1>BDT <span>1100</span></h1>
-              </div>
-
-            </div>
-
-            <!-- Passenger info and NEXT button div -->
-            <div class="mt-5 lg:mt-8">
-
-              <div class="mt-3">
-                <label class="form-control w-full">
-                  <div class="label">
-                    <span class="label-text text-lg font-medium">Passenger Name*</span>
-                  </div>
-                  <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
-              </div>
-
-              <div class="mt-3">
-                <label class="form-control w-full">
-                  <div class="label">
-                    <span class="label-text text-lg font-medium">Phone Number*</span>
-                  </div>
-                  <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full" />
-              </div>
-
-              <div class="mt-3">
-                <label class="form-control w-full">
-                  <div class="label">
-                    <span class="label-text text-lg font-medium">Email</span>
-                  </div>
-                  <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full" />
-              </div>
-
-              <button class="btn btn-active w-full bg-[#1DD100] text-white mt-5 lg:mt-10">NEXT</button>
-
-              <div class="flex justify-evenly mt-3 text-[#03071299]">
-                <a class="link link-neutral">Terms and Conditions</a>
-                <a class="link link-neutral">Cancellation Policy</a>
-              </div>
-
-
-
-            </div>
-
-
-          </div>
-
-
-          <!-- Parent div end -->
-        </div>
-
-
-      </div>
-
-
-
-
-    </section>
-
-
-
-  </main>
-
-
-
-
-
-
-  <footer>
-
-  </footer>
 
   <!-- JS -->
   <script src="scripts/bus-ticket.js"></script>
   <script src="scripts/calculate-fair.js"></script>
   <script src="scripts/show-fair-cuppon.js"></script>
   <script src="scripts/button-click.js"></script>
+  <script src="scripts/next-button.js"></script>
 
 </body>
 
