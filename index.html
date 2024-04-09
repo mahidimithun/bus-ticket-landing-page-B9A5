@@ -156,7 +156,7 @@
               </div>
 
               <div>
-                <h2 class="card-title font-bold text-3xl">Couple 20</h2>
+                <h2 class="card-title font-bold text-3xl">Couple20</h2>
                 <p>Coupon Code</p>
               </div>
 
@@ -546,12 +546,12 @@
                     <h1>BDT <span id="total-fair">0</span></h1>
                 </div>
 
-                <input type="text" placeholder="Have any copupon?" class="input w-full" />
-                <button class="btn bg-[#1DD100] text-white absolute ml-[-82px] w-20">APPLY</button>
+                <input type="text" id="cuppon-text" placeholder="Have any copupon?" class="input w-full" />
+                <button onclick="clickCupponApply()" class="btn bg-[#1DD100] text-white absolute ml-[-82px] w-20">APPLY</button>
 
                 <div class="flex flex-row justify-between mt-5 font-medium lg:text-lg">
                   <h1>Grand Total</h1>
-                  <h1>BDT <span>1100</span></h1>
+                  <h1>BDT <span id="grand-total">0</span></h1>
                 </div>
 
               </div>
@@ -672,6 +672,7 @@
   <script src="scripts/show-fair-cuppon.js"></script>
   <script src="scripts/button-click.js"></script>
   <script src="scripts/next-button.js"></script>
+  <script src="scripts/cuppon-apply.js"></script>
 
 </body>
 

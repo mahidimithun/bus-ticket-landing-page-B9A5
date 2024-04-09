@@ -36,15 +36,23 @@ function removeSeat(elementId) {
 
 }
 
+
+
+
+
+
+
 function ct(countAfterAdd,countAfterRemove){
 
 
     fair = countAfterAdd * 550;
+    
     // console.log(fair)
     const element = document.getElementById('total-fair');
     const text = element.innerText;
     let totalFairInt = parseFloat(text);
     totalFairInt = fair;
+    
     // console.log('Int',totalFairInt);
 
     const displayTotalFair = document.getElementById('total-fair');
@@ -60,6 +68,8 @@ function ct(countAfterAdd,countAfterRemove){
     // console.log('Count',totalNumberOfSeat);
     const totalSeatCount = document.getElementById('number-of-seat');
     totalSeatCount.innerText = totalNumberOfSeat;
+    
+    
 
 }
 
